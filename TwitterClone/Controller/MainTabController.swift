@@ -21,18 +21,25 @@ class MainTabController: UITabBarController {
     
     // MARK: - Helpers
     func configureViewContoller() {
-        let feed = FeedController()
-        feed.tabBarItem.image = UIImage(systemName: "house")
-        
-        let explore = ExploreController()
-        explore.tabBarItem.image = UIImage(systemName: "magnifyingglass")
-        
-        let notifications = NotificationsController()
-        notifications.tabBarItem.image = UIImage(systemName: "heart")
-        
-        let conversations = ConversationsController()
-        conversations.tabBarItem.image = UIImage(systemName: "envelope")
-        
+        let feed = templateNavigationController(
+            imageName: "house",
+            rootViewController: FeedController())
+        let explore = templateNavigationController(
+            imageName: "magnifyingglass",
+            rootViewController: ExploreController())
+        let notifications = templateNavigationController(
+            imageName: "heart",
+            rootViewController: NotificationsController())
+        let conversations = templateNavigationController(
+            imageName: "envelope",
+            rootViewController: ConversationsController())
         viewControllers = [feed, explore, notifications, conversations]
+    }
+    
+    func templateNavigationController(imageName: String, rootViewController: UIViewController) -> UINavigationController {
+        let nav = UINavigationController(rootViewController: rootViewController)
+        nav.tabBarItem.image = UIImage(systemName: imageName)
+        nav.navigationBar.barTintColor = .white
+        return nav
     }
 }
