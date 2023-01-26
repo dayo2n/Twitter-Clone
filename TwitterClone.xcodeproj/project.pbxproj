@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF0408352982586300F1129B /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0408342982586300F1129B /* FeedController.swift */; };
+		BF0408372982588B00F1129B /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0408362982588B00F1129B /* ExploreController.swift */; };
+		BF040839298258B200F1129B /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF040838298258B200F1129B /* ConversationsController.swift */; };
+		BF04083B298258BE00F1129B /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04083A298258BE00F1129B /* NotificationsController.swift */; };
 		BFE9E69428979F85003E5430 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9E69328979F85003E5430 /* AppDelegate.swift */; };
 		BFE9E69628979F85003E5430 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9E69528979F85003E5430 /* SceneDelegate.swift */; };
 		BFE9E69B28979F85003E5430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE9E69928979F85003E5430 /* Main.storyboard */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF0408342982586300F1129B /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		BF0408362982588B00F1129B /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
+		BF040838298258B200F1129B /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
+		BF04083A298258BE00F1129B /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
 		BFE9E69028979F85003E5430 /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE9E69328979F85003E5430 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE9E69528979F85003E5430 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +112,10 @@
 			isa = PBXGroup;
 			children = (
 				BFE9E6AF2897A02D003E5430 /* MainTabController.swift */,
+				BF0408342982586300F1129B /* FeedController.swift */,
+				BF04083A298258BE00F1129B /* NotificationsController.swift */,
+				BF0408362982588B00F1129B /* ExploreController.swift */,
+				BF040838298258B200F1129B /* ConversationsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -187,8 +199,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE9E69428979F85003E5430 /* AppDelegate.swift in Sources */,
+				BF0408372982588B00F1129B /* ExploreController.swift in Sources */,
 				BFE9E69628979F85003E5430 /* SceneDelegate.swift in Sources */,
+				BF04083B298258BE00F1129B /* NotificationsController.swift in Sources */,
 				BFE9E6B02897A02D003E5430 /* MainTabController.swift in Sources */,
+				BF040839298258B200F1129B /* ConversationsController.swift in Sources */,
+				BF0408352982586300F1129B /* FeedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
