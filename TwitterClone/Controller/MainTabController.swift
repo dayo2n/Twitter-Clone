@@ -13,8 +13,9 @@ class MainTabController: UITabBarController {
     let actionButton: UIButton = {
         let button = UIButton(type: .system)
         button.tintColor = .white
-        button.backgroundColor = .blue
+        button.backgroundColor = .twitterBlue
         button.setImage(UIImage(systemName: "plus"), for: .normal)
+        button.addTarget(self, action: #selector(actionButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -25,6 +26,11 @@ class MainTabController: UITabBarController {
 
         configureViewContoller()
         configureUI()
+    }
+    
+    // MARK: - Selectors
+    @objc func actionButtonTapped() {
+        print("button tapped")
     }
     
     // MARK: - Helpers
