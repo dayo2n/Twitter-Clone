@@ -14,7 +14,7 @@
 		BF0408422986743B00F1129B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0408412986743B00F1129B /* Extensions.swift */; };
 		BF040845298683A800F1129B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF040844298683A800F1129B /* LoginController.swift */; };
 		BF040847298683F200F1129B /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF040846298683F200F1129B /* RegistrationController.swift */; };
-		BF040849298689AC00F1129B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF040848298689AC00F1129B /* Utilities.swift */; };
+		BF04085D2986D1F100F1129B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04085C2986D1F100F1129B /* Utilities.swift */; };
 		BFE9E69428979F85003E5430 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9E69328979F85003E5430 /* AppDelegate.swift */; };
 		BFE9E69628979F85003E5430 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9E69528979F85003E5430 /* SceneDelegate.swift */; };
 		BFE9E69B28979F85003E5430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE9E69928979F85003E5430 /* Main.storyboard */; };
@@ -31,7 +31,7 @@
 		BF0408412986743B00F1129B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BF040844298683A800F1129B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		BF040846298683F200F1129B /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
-		BF040848298689AC00F1129B /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		BF04085C2986D1F100F1129B /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		BFE9E69028979F85003E5430 /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE9E69328979F85003E5430 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE9E69528979F85003E5430 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				BF0408412986743B00F1129B /* Extensions.swift */,
-				BF040848298689AC00F1129B /* Utilities.swift */,
+				BF04085C2986D1F100F1129B /* Utilities.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -220,7 +220,7 @@
 			files = (
 				BFE9E69428979F85003E5430 /* AppDelegate.swift in Sources */,
 				BF0408372982588B00F1129B /* ExploreController.swift in Sources */,
-				BF040849298689AC00F1129B /* Utilities.swift in Sources */,
+				BF04085D2986D1F100F1129B /* Utilities.swift in Sources */,
 				BFE9E69628979F85003E5430 /* SceneDelegate.swift in Sources */,
 				BF0408422986743B00F1129B /* Extensions.swift in Sources */,
 				BF040845298683A800F1129B /* LoginController.swift in Sources */,
