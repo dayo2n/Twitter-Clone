@@ -24,27 +24,31 @@ class FeedController: UIViewController {
         configureUI()
     }
     
+    // MARKL - Selectors
     // MARK: - Helpers
     func configureUI() {
         view.backgroundColor = .white
         
         let imageView = UIImageView(image: UIImage(named: "twitter"))
         imageView.contentMode = .scaleAspectFit
-        navigationItem.titleView = imageView
+        let titleView = UIView(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
+        imageView.frame = titleView.bounds
+        titleView.addSubview(imageView)
         
+        self.navigationItem.titleView = titleView
     }
     
     func configureLeftBarButton() {
         guard let user = user else { return }
         
         let profileImageView = UIImageView()
-        profileImageView.setDimensions(width: 40, height: 40)
-        profileImageView.layer.cornerRadius = 40 / 2
+        profileImageView.setDimensions(width: 32, height: 32)
+        profileImageView.layer.cornerRadius = 32 / 2
         profileImageView.sd_setImage(with: URL(string: user.profileIamgeUrl), completed: nil)
         profileImageView.layer.masksToBounds = true // imageView를 둥글게
         profileImageView.contentMode = .scaleAspectFill
         profileImageView.clipsToBounds = true
-        
+
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: profileImageView)
     }
 }
