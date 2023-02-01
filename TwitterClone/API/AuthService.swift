@@ -19,6 +19,10 @@ struct AuthCredentials {
 struct AuthService {
     static let shared = AuthService()
     
+    func login(withEmail email: String, password: String, completion: @escaping(AuthDataResult?, Error?) -> Void) {
+        Auth.auth().signIn(withEmail: email, password: password, completion: completion)
+    }
+    
     func registerUser(credentials: AuthCredentials, completion: @escaping(Error?, DatabaseReference) -> Void) {
         
         // 압축하지 않으면 이미지가 너무 커서 로딩을 너무 오래 하게 될 수 있음

@@ -25,7 +25,6 @@ class MainTabController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .twitterBlue
-        logout()
         authenticateUserAndConfigureUI()
     }
     
