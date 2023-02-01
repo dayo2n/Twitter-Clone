@@ -63,7 +63,6 @@ class RegistrationController: UIViewController {
     
     private let usernameTextField: UITextField = {
         let tf = Utilities().textField(widthPlaceholder: "Username")
-        tf.isSecureTextEntry = true
         return tf
     }()
     
