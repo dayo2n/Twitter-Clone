@@ -11,6 +11,18 @@ import Firebase
 class MainTabController: UITabBarController {
     
     // MARK: - Properties
+    
+    var user: User? {
+        didSet {
+            guard let nav = viewControllers?[0] as? UINavigationController else { return }
+            guard let feed = nav.viewControllers.first as? FeedController else { return }
+            // viewControllers의 first item이 feedController
+            // configureViewController() 중 viewControllers = [feed, explore, notifications, conversations]
+            
+            feed.user = user
+        }
+    }
+    
     let actionButton: UIButton = {
         let button = UIButton(type: .system)
         button.tintColor = .white
@@ -24,16 +36,21 @@ class MainTabController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        logout()
         view.backgroundColor = .twitterBlue
         authenticateUserAndConfigureUI()
     }
     
     // MARK: - API
+    
     func authenticateUserAndConfigureUI() {
         if let currentUser = Auth.auth().currentUser {
             // 로그인한 유저가 있는 상태
             configureUI()
             configureViewContoller()
+            UserService.shared.fetchUser { user in
+                self.user = user
+            }
         } else {
             // 로그인이 필요한 상태
             DispatchQueue.main.async {

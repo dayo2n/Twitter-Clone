@@ -116,8 +116,12 @@ class RegistrationController: UIViewController {
                                           fullname: fullname,
                                           username: username,
                                           profileImage: profileImage)
+        
         AuthService.shared.registerUser(credentials: credentials) { error, ref in
-            print("DEBUG: Sign up successful...")
+            if let error = error {
+                print(error.localizedDescription)
+            }
+            print("DEBUG: Sign up success")
             print("DEBUG: Handle update user interface here...")
         }
     }
